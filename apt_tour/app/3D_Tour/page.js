@@ -9,7 +9,7 @@ const Scene = dynamic(() => import('../components/Scene'), {
 
 export default function TourPage() {
   return (
-    <div className="relative h-screen w-screen bg-white flex text-left">
+    <div className="relative w-screen bg-white flex text-left h-full">
       <div className="w-1/4 justify-center p-12 z-10 text-black">
         Placeholder
       </div>

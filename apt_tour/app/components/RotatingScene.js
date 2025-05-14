@@ -13,7 +13,7 @@ export default function Scene({ scene_name }) {
 
         <a-entity 
             gltf-model={scene_name}
-            position="2 2.5 0"
+            position="2 2.5 2"
             rotation="0 0 0"
             scale="0.7 0.7 0.7"
             animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear"

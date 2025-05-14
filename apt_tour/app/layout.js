@@ -25,8 +25,10 @@ export default function RootLayout({ children }) {
         <Script src="https://aframe.io/releases/1.4.2/aframe.min.js" strategy="beforeInteractive"/>
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <Navbar />
-        {children}
+        <div className="flex flex-col h-screen">
+          <Navbar />
+          {children}
+        </div>
       </body>
     </html>
   );
