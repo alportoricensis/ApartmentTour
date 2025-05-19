@@ -9,6 +9,8 @@ export default function Navbar() {
                 <div className="">
                     <Link href="/">Home </Link>
                     |
+                    <Link href="/About"> About </Link>
+                    |
                     <Link href="/3D_Tour"> 3D Apartment Tour </Link>
                     |
                     <Link href="/360_Photo_Tour"> 360 Photo Tour</Link>

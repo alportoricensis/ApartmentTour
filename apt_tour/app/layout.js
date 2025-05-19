@@ -1,16 +1,12 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Fragment_Mono } from "next/font/google";
 import Navbar from './components/Navbar'
 import Script from "next/script";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const fragmentMono = Fragment_Mono({
+  variable: "--font-fragment",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: "400"
 });
 
 export const metadata = {
@@ -23,9 +19,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <Script src="https://aframe.io/releases/1.4.2/aframe.min.js" strategy="beforeInteractive"/>
+        <Script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js" strategy="beforeInteractive"/>
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <div className="flex flex-col h-screen">
+      <body className={`${fragmentMono.variable} font-fragment antialiased`}>
+        <div className="flex flex-col h-screen overflow-auto">
           <Navbar />
           {children}
         </div>
