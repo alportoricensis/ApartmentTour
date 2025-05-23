@@ -2,7 +2,6 @@
 'use client';
 
 import dynamic from 'next/dynamic';
-import Dropdown from '../components/Dropdown';
 import Blurbs from '../components/Blurbs';
 import { fullBlurbs } from '../components/BlurbData';
 
@@ -17,7 +16,7 @@ export default function TourPage() {
         <h2>Full Apartment</h2>
         <Blurbs fullBlurbs={fullBlurbs}/>
       </div>
-      <Scene scene_name={"./Full_Apartment.glb"} fullBlurbs={fullBlurbs}/>
+      <Scene scene_name={"./FullApartmentCleaned.glb"} fullBlurbs={fullBlurbs}/>
     </div>
   );
 }

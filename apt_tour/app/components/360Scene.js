@@ -1,7 +1,7 @@
 // app/components/360Scene.js
 'use client';
 import { useRef, useEffect, useState } from 'react';
-import Waypoint from './Waypoint';
+import Waypoint360 from './Waypoint360';
 import InterestPoint from './InterestPoint';
 
 
@@ -71,7 +71,7 @@ export default function Scene360({ currModel, setCurrModel, fullBlurbs }) {
             <InterestPoint label={blurb.label} position={blurb.photosphere_loc} key={idx}/>
           ))}
           {currModel === hub_model && rooms.map((room, idx) => (
-            <Waypoint
+            <Waypoint360
               key={idx}
               model={room.model}
               position={room.position}
@@ -80,7 +80,7 @@ export default function Scene360({ currModel, setCurrModel, fullBlurbs }) {
             />
           ))}
           {currModel === rooms[0].model && (
-            <Waypoint
+            <Waypoint360
               model={hub_model}
               position="-0.9 0.2 -0.25"
               currModel={currModel}
@@ -88,7 +88,7 @@ export default function Scene360({ currModel, setCurrModel, fullBlurbs }) {
             />
           )}
           {currModel === rooms[1].model && (
-            <Waypoint
+            <Waypoint360
               model={hub_model}
               position="-0.8 0.1 0.4"
               currModel={currModel}

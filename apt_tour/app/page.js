@@ -16,7 +16,7 @@ export default function HomePage() {
           <p className="mt-4 text-3xl">A technical showcase made for the ZEUS laser facility</p>
         </div>
         <div className='flex-1 relative'>
-          <RotatingScene scene_name={"./Full_Apartment.glb"}/>
+          <RotatingScene scene_name={"./FullApartmentCleaned.glb"}/>
         </div>
       </div>
   );

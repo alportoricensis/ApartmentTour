@@ -1,4 +1,4 @@
-// app/components/Blurb.js
+ // app/components/Blurb.js
 'use client';
 import { useState, useEffect } from 'react';
 import Blurb from '../components/Blurb';
@@ -23,7 +23,7 @@ export default function Blurbs({ currModel, fullBlurbs }) {
   return (
     <div>
         {blurbs.map((blurb, idx) => (
-          <Blurb text={blurb.text} title={blurb.title} key={idx} />
+          <Blurb text={blurb.text} title={blurb.title + " " + blurb.label_360} key={idx} />
         ))}
     </div>
   );
