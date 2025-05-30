@@ -29,13 +29,13 @@ These interactive elements serve to merge technical demonstration with a bit of 
 ## Screenshots
 
 ### Home Page
-![Home Page](./Home.png)
+![Home Page](./Home.PNG)
 
 ### About Section
-![About Section](./About.png)
+![About Section](./About.PNG)
 
 ### 3D Tour
-![3D Tour](./3DTour.png)
+![3D Tour](./3DTour.PNG)
 
 ### Photosphere Tour View
-![Photosphere Tour](./PhotosphereTour.png)
+![Photosphere Tour](./PhotosphereTour.PNG)
